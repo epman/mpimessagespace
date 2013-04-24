@@ -1,0 +1,42 @@
+dnl
+dnl Process this file with autoconf to produce a configure script.
+dnl
+
+AC_PREREQ([2.63])
+AC_INIT([messagespace], [1.0], [epmancini_at_unisannio.it])
+AM_INIT_AUTOMAKE
+AC_CONFIG_SRCDIR([datafile.c])
+#AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_FILES([Makefile])
+
+AM_MAINTAINER_MODE
+
+# Checks for programs.
+AC_PROG_CC
+
+# Checks for libraries.
+
+# Checks for header files.
+AC_CHECK_HEADERS([stdlib.h stdlib.h string.h])
+
+AC_CHECK_HEADERS([GL/gl.h GL/glu.h GL/glut.h])
+#AC_CHECK_LIB(glut GL GLU)
+
+# Checks for typedefs, structures, and compiler characteristics.
+
+# Checks for library functions.
+AC_FUNC_MALLOC
+
+AC_OUTPUT
+
+echo \
+"
+  Build setup:
+    Compiler:          ${CC}
+    Compiler flags:    ${CFLAGS} ${ac_CFLAGS}
+    Linker Flags:      ${LDFLAGS} ${ac_LIBS}
+    Libs:              ${LIBS}
+    Host System Type:  ${host}
+    Install path:      ${prefix}
+"
+
