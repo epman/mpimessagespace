@@ -6,12 +6,15 @@ This tool shows the "send" messages of a set of MPI processes in a 3D spaces. It
 Keyboard commands
 -----------------
 
-    *Q*: quit;
-    *Arrows*: rotate the axis;
-    *A/D/W/S/Pag up/Pag down*: move the camera;
-    *P*: show/hide process planes;
-    *+/-*: when showing process planes, choose the highlighted one;
-    *T*: fill the graph with random test data.
+    Q: quit;
+    Arrows: rotate the axis;
+    A/D/W/S/Pag up/Pag down: move the camera;
+    P: show/hide process planes;
+    +/-: when showing process planes, choose the highlighted one;
+    T: fill the graph with random test data.
+
+Screenshots
+-----------
 
 ![Screenshot 1](screenshots/scr1.png)
 ![Screenshot 2](screenshots/scr2.png)
